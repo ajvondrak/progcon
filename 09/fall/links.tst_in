@@ -1,0 +1,58 @@
+a b   b c   c d   d e
+
+a b
+a c
+a d
+
+a b   b c   c a
+
+a c
+b c   c d   d e
+g h   h i   i h
+
+a b   b c   c d   e f   f c   g d   d a
+
+a b   b c   c d   e f   f c   g d   d b
+
+a b   b c   c d   e f   f c   g d   c f
+
+1 0
+2 1
+3 1
+4 2
+5 2
+6 3
+7 3
+8 4
+9 4
+a 5
+b 5
+c 6
+d 6
+e 7
+f 7
+g 8
+h 8
+i 9
+j 9
+k a
+l a
+m b
+n b
+o c
+p c
+q d
+r d
+s e
+t e
+u f
+v f
+w g
+x g
+y h
+z h
+
+a a
+
+a b  c d  e f  g h  i j  k l  m n  o p  q r  s t  u v  w x  y z
+
