@@ -1,0 +1,37 @@
+
+#def local_to_utc(h, m, s, h_offset, m_offset, s_offset):
+#    raw_s = (s - s_offset)
+#    raw_m = (m - m_offset)
+#    raw_h = (h - h_offset)
+#    return (utc_h, utc_m, utc_s)
+
+def parse_offset(offset):
+    h_offset, m_offset = int(offset[1:3]), int(offset[3:])
+    sign = -1 if offset[0] == '-' else 1
+    return to_seconds(sign * h_offset, sign * m_offset, 0)
+
+#def parse_standard_time(time):
+#    local_time, offset = time.split()
+#    h, m, s = map(int, local_time.split(":"))
+#    h_offset, m_offset, s_offset = parse_offset(offset)
+#    return local_to_utc(h, m, s, h_offset, m_offset, s_offset)
+
+
+#def local_to_utc(h, m, s, h_offset, m_offset, s_offset):
+#    raw_s = (s - s_offset)
+#    raw_m = (m - m_offset)
+#    raw_h = (h - h_offset)
+#    return (utc_h, utc_m, utc_s)
+
+#def parse_standard_time(time):
+#    local_time, offset = time.split()
+#    h, m, s = map(int, local_time.split(":"))
+#    h_offset, m_offset, s_offset = parse_offset(offset)
+#    return local_to_utc(h, m, s, h_offset, m_offset, s_offset)
+
+
+def to_hms(seconds):
+    s = seconds % 60
+    m = (seconds / 60) % 60
+    h = (seconds / 60 / 60) % 24
+    return (h, m, s)

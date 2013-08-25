@@ -1,0 +1,38 @@
+import sys
+
+approval_tree = {}
+petition_tree = {}
+
+def leaves(tree):
+    return [person for person in tree if not tree[person]]
+
+copies_stored = {}
+
+def store_copy(person):
+    copies_stored.setdefault(person, 0)
+    copies_stored[person] += 1
+
+def send_petition(originator):
+    node = originator
+    path = []
+    while petition_tree[node]:
+        path.push(petition_tree[node])
+        node = petition_tree[node]
+
+def do_stuff():
+    ultimate_authority = leaves(petition_tree)[0]
+    petitioners = leaves(approval_tree) 
+    for petitioner in petitioners:
+
+for line in sys.stdin.readlines():
+    people = line.split()
+    if not people:
+        do_stuff()
+        approval_tree = {}
+        petition_tree = {}
+        continue
+    authority, underlings = people[0], people[1:]
+    approval_tree[authority] = underlings
+    petition_tree.setdefault(authority, [])
+    for underling in underlings:
+        petition_tree.setdefault(underling, []).append(authority)
