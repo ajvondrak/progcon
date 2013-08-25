@@ -1,0 +1,17 @@
+Congratulations to everyone who participated in the Winter 2012 CSS Programming Contest. The contest problems, solutions and example inputs/outputs are available at
+
+http://www.csupomona.edu/~carich/programming_contests/
+
+The top three performers will be awarded $100, $75, and $50 Visa gift cards, respectively, which will be presented at the CSS meeting on Wednesday, February 29, at 1 p.m. in room 8-345. Please email Alex Gutierrez (mailto:avgutierrez@csupomona.edu) about picking up your contest prize money.
+
+    William Thomas  (solved two problems in C# and one problem in Java)
+    Bryan Thornbury  (solved three problems in Java)
+    Anthony Mendez (solved three problems in PHP)
+
+There were actually six programmers who solved three problems, so I'd like to also recognize strong performances by Keenan Breik, Alex Gutierrez, and Toan Tran (from the University of Houston). One of the problems---Colorful---was harder than the rest; it's actually NP-complete and had to be solved by brute force on a (< 24-node graph); congratulations to Keenan Breik for being the only person to attempt it, and for correctly solving it.
+
+The shortest solution to Problem 0 (the Rising problem) was 141 bytes of Python submitted by Alex Vondrak, and the shortest student solution was 155 bytes of Perl submitted by Charles Frayne. You can check out the correct Problem 0 solutions at
+
+http://www.csupomona.edu/~carich/programming_contests/201201/problem0/?C=S;O=A
+
+The complete rankings and record of all program submissions is attached.
