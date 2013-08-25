@@ -1,6 +1,6 @@
 # Programming Contests
 
-I went to [Cal Poly Pomona](http://www.csupomona.edu/) from 2006 to 2012 as an undergrad, graduate, and lecturer in computer science.  Each quarter (more or less), the student Computer Science Society would host programming contests run by the club's long-time advisor, [Dr.  Rich](http://www.csupomona.edu/~carich/).
+I went to [Cal Poly Pomona](http://www.csupomona.edu/) from 2006 to 2012 as an undergrad, graduate, and lecturer in computer science.  Each quarter (more or less), the student Computer Science Society would host programming contests run by the club's long-time advisor, [Dr. Rich](http://www.csupomona.edu/~carich/).  These contests were 4 hours of solving 4 problems, coding against the clock.
 
 This repo is a historical archive of my performance at all of those contests: the good, the bad, and the ugly.  I'm retroactively organizing and assembling as much data as I can about the contests, just because I think it'll be interesting to look at it all and share it with others.  To keep this project self-contained, and in case the original site ever goes down, I'm including copies of a lot of Dr. Rich's material from his [programming contest site](http://www.csupomona.edu/~carich/programming_contests/).
 
@@ -18,7 +18,7 @@ This repo is a historical archive of my performance at all of those contests: th
 
   * `problem_name.pdf` - The problem statement supplied by Dr. Rich.
 
-  * `problem_name.*` - The final code I had written, generally in Python.  This is not necessarily code I submitted; it might just be how far I happened to get with the problem.
+  * `problem_name.*` - If present, the final version of the code I wrote, generally in Python.  This is not necessarily code I submitted.  It might just be how far I happened to get with the problem.
 
   * `problem_name.in` - The sample input file for the particular problem.
 
@@ -32,7 +32,7 @@ This repo is a historical archive of my performance at all of those contests: th
 
   * `failed/problem_name/n.*` - The _n_<sup>th</sup> incorrect version of the indicated problem that I submitted to Dr. Rich.
 
-  * `p0/` - Beginning in Fall 2011, Dr. Rich started giving a "Problem 0" some time before the main contest started.  These were easier problems meant to attract new contestants.  To keep veterans entertained, there was a competition to produce the shortest program (in bytes) that solved Problem 0.  I won all three code golf challenges that I attempted.  These are my (various) solutions, arranged in a similar fashion to the main contest material.
+  * `p0/` - Beginning in Fall 2011, Dr. Rich started giving a "Problem 0" some weeks before the main contest took place.  These were easier problems meant to attract new contestants.  To keep veterans entertained, there was a competition to produce the shortest program (measured in source code bytes) that solved Problem 0.  I won all three code golf challenges that I attempted.  These are my (various) solutions for the given year/quarter's Problem 0, arranged in a similar fashion to the main contest material.
 
 ## Running The Programs
 
