@@ -1,0 +1,9 @@
+start        @ 4 up
+departure(s) @ 5 up
+arrival(s)   @ 5 up going to 9
+departure(s) @ 9 up
+arrival(s)   @ 5 down going to 2
+departure(s) @ 3 down
+departure(s) @ 2 down
+arrival(s)   @ 1 up going to 10
+departure(s) @ 10 up

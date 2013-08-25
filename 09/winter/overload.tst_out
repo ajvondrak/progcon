@@ -1,0 +1,27 @@
+actual: Integer doIt()
+
+actual: Number area(Rectangle)
+formal: Number area(Shape)
+formal: Integer area(Shape)
+formal: Byte area(Rectangle)
+
+actual: void mash()
+
+actual: void mash(Rectangle, Square)
+
+actual: void mash(Byte, Square)
+formal: void mash(Number, Shape)
+
+actual: void m(Integer)
+
+actual: T31111 m(Object, T31, T31)
+
+actual: T3 m(Object, Object, T52)
+
+actual: T1 m(T31, T3111, T52)
+formal: T12 m(T31, T3111, T52)
+formal: T1 m(T31, T3111, T52)
+formal: T12 m(T31, T3, T5)
+formal: T12 m(T3, T3, T5)
+formal: T12 m(Object, Object, Object)
+

@@ -1,0 +1,26 @@
+start        @ 13 down
+departure(s) @ 12 down
+arrival(s)   @ 5 down going to 4
+departure(s) @ 4 down
+arrival(s)   @ 4 down going to 3
+departure(s) @ 3 down
+departure(s) @ 1 down
+arrival(s)   @ 1 up going to 10
+departure(s) @ 10 up
+departure(s) @ 20 up
+arrival(s)   @ 35 up going to 45
+departure(s) @ 40 up
+departure(s) @ 45 up
+arrival(s)   @ 45 up going to 58
+arrival(s)   @ 45 up going to 59
+arrival(s)   @ 45 up going to 60
+arrival(s)   @ 45 up going to 61
+departure(s) @ 58 up
+departure(s) @ 59 up
+departure(s) @ 60 up
+departure(s) @ 61 up
+departure(s) @ 75 up
+arrival(s)   @ 62 down going to 50
+arrival(s)   @ 62 down going to 3
+departure(s) @ 50 down
+departure(s) @ 3 down

@@ -1,0 +1,52 @@
+Number extends Object
+Byte extends Number
+Integer extends Byte
+Widget extends Object
+Shape extends Object
+Rectangle extends Shape
+Square extends Rectangle
+T1 extends Object
+T2 extends Object
+T3 extends Object
+T4 extends Object
+T5 extends Object
+T11 extends T1
+T12 extends T1
+T21 extends T2
+T31 extends T3
+T32 extends T3
+T33 extends T3
+T41 extends T4
+T51 extends T5
+T52 extends T5
+T311 extends T31
+T3111 extends T311
+T31111 extends T3111
+T311111 extends T31111
+
+void mash(Number, Shape)
+Number area(Shape)
+Integer area(Shape)
+void area(Square)
+Byte area(Rectangle)
+Number side(Square)
+void doIt()
+T12 m(T31, T3111, T52)
+void m(T31, T3111, T52)
+T1 m(T31, T3111, T52)
+Object m(T31, T3111, T52)
+T3111 m()
+T3111 m(T31, T3111)
+T12 m(T31, T3, T5)
+T12 m(T3, T3, T5)
+T12 m(Object, Object, Object)
+
+Integer doIt()
+Number area(Rectangle)
+void mash()
+void mash(Rectangle, Square)
+void mash(Byte, Square)
+void m(Integer)
+T31111 m(Object, T31, T31)
+T3 m(Object, Object, T52)
+T1 m(T31, T3111, T52)

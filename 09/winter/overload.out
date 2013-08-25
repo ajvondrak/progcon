@@ -1,0 +1,14 @@
+actual: Integer doIt()
+
+actual: Number area(Rectangle)
+formal: Number area(Shape)
+formal: Integer area(Shape)
+formal: Byte area(Rectangle)
+
+actual: void mash()
+
+actual: void mash(Rectangle, Square)
+
+actual: void mash(Byte, Square)
+formal: void mash(Number, Shape)
+

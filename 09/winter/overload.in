@@ -1,0 +1,21 @@
+Number extends Object
+Byte extends Number
+Integer extends Byte
+Widget extends Object
+Shape extends Object
+Rectangle extends Shape
+Square extends Rectangle
+
+void mash(Number, Shape)
+Number area(Shape)
+Integer area(Shape)
+void area(Square)
+Byte area(Rectangle)
+Number side(Square)
+void doIt()
+
+Integer doIt()
+Number area(Rectangle)
+void mash()
+void mash(Rectangle, Square)
+void mash(Byte, Square)
