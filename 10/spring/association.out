@@ -1,0 +1,3 @@
+client client1 associates with AP ap2 using protocol protocol2 at signal strength 6
+client client2 associates with AP ap1 using protocol protocol1 at signal strength 8
+client client3 associates with AP ap2 using protocol protocol2 at signal strength 4

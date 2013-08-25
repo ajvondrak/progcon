@@ -1,0 +1,8 @@
+client cl1 associates with AP ap2 using protocol sec2 at signal strength 6
+client cl2 associates with AP ap1 using protocol sec1 at signal strength 8
+client cl3 associates with AP ap2 using protocol sec2 at signal strength 4
+client cl4 associates with AP ap1 using protocol sec3 at signal strength 9
+client cl5 is not associated
+client cl6 is not associated
+client cl7 is not associated
+client cl8 associates with AP ap4 using protocol sec4 at signal strength 100

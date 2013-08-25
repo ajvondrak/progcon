@@ -1,0 +1,90 @@
+ap1
+sec1
+sec3
+sec5
+
+ap2
+sec1
+sec2
+sec3
+
+ap3
+sec2
+
+ap4
+sec2
+sec3
+sec4
+sec5
+
+ap5
+sec3
+
+
+cl1
+sec2
+sec5
+5
+ap1 4
+ap2 6
+
+cl2
+sec1
+sec2
+sec3
+sec4
+sec5
+0
+ap1 8
+ap2 8
+
+cl3
+sec2
+3
+ap1 3
+ap2 4
+
+cl4
+sec3
+8
+ap1 9
+ap2 9
+ap3 9
+ap4 9
+ap5 9
+
+cl5
+sec1
+sec2
+sec3
+sec4
+sec5
+10
+ap1 1
+ap2 2
+ap3 3
+ap4 4
+ap5 5
+
+cl6
+sec1
+10
+
+cl7
+sec4
+100
+ap1 100
+ap2 100
+ap3 100
+ap5 100
+
+cl8
+sec4
+100
+ap1 100
+ap2 100
+ap3 100
+ap4 100
+ap5 100
+
+

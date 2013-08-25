@@ -1,0 +1,36 @@
+1 accepts 72.00
+2 accepts 36.00 from 1
+3 accepts 12.00 from 4
+4 accepts 36.00 from 1
+5 accepts 12.00 from 4
+6 accepts 12.00 from 4
+7 accepts 18.00 from 8
+8 accepts 18.00 from 2
+9 accepts 18.00 from 2
+10 accepts 6.00 from 3
+11 accepts 6.00 from 3
+
+1 accepts nothing
+2 accepts 32.87 from 3
+3 accepts 98.60
+4 accepts nothing
+5 accepts nothing
+6 accepts nothing
+7 accepts 16.43 from 8
+8 accepts 16.43 from 2
+9 accepts 16.43 from 2
+10 accepts 32.87 from 3
+11 accepts 32.87 from 3
+
+1 accepts nothing
+2 accepts nothing
+3 accepts nothing
+4 accepts nothing
+5 accepts nothing
+6 accepts nothing
+7 accepts 100.00
+8 accepts nothing
+9 accepts nothing
+10 accepts nothing
+11 accepts nothing
+
