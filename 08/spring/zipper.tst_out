@@ -1,0 +1,14 @@
+yes: abcd ~ efgh =? abefcgdh
+yes: what ~ up =? whatup
+yes: what ~ up =? upwhat
+ no: yerps ~ cbace =? cyberspace
+yes: yerpc ~ cbsae =? cyberspace
+ no: these ~ are =? crazy
+ no: 000000 ~ 000000 =? 00000000000
+yes: 01010101 ~ 01010101 =? 0011010100110101
+ no: 00000000 ~ 11111111 =? 1010010111000010
+yes: prclfrglstexildcou ~ sueaiaiiicpaiois =? supercalifragilisticexpialidocious
+yes: a ~ b =? ab
+yes: a ~ b =? ba
+ no: a ~ b =? aa
+ no: a ~ b =? bb
