@@ -1,0 +1,15 @@
+a -> no successor
+12 -> 21
+03snd3fk5ee2 -> 03snd3fke25e
+gfedcba987 -> no successor
+036420 -> 040236
+09876543210 -> 10023456789
+a0a -> aa0
+0aa -> a0a
+0123456789abcdefghijklmnopqrstuvwxyz -> 0123456789abcdefghijklmnopqrstuvwxzy
+0 -> no successor
+z -> no successor
+0zyxwvutsrqponmlkjihgfedcba9876543210 -> 10023456789abcdefghijklmnopqrstuvwxyz
+aaaaaaaaaaaa -> no successor
+abbbbbbbbbbb -> babbbbbbbbbb
+098yq345lkbjsvd098awyu4h5oikzhufg098u4wy5 -> 098yq345lkbjsvd098awyu4h5oikzhufg098u4y5w
