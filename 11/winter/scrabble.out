@@ -1,0 +1,8 @@
+3x3 board:
+bug at (0,0) across scores 30
+zap at (0,2) down scores 72
+
+2x2 board:
+if at (0,1) down scores 9
+ox at (0,1) across scores 18
+

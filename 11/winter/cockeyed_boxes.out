@@ -1,0 +1,13 @@
+most nested with outermost a and innermost a: 1
+most nested with outermost a and innermost b: 0
+most nested with outermost a and innermost c: 0
+most nested with outermost a and innermost d: 0
+most nested with outermost a and innermost e: 2
+most nested with outermost b and innermost a: 3
+most nested with outermost b and innermost d: 3
+most nested with outermost b and innermost e: 4
+most nested with outermost c and innermost b: 0
+most nested with outermost d and innermost a: 0
+most nested with outermost d and innermost c: 0
+most nested with outermost d and innermost e: 2
+most nested with outermost e and innermost d: 0

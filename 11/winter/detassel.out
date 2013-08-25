@@ -1,0 +1,11 @@
+cut 88.00 produces tassel error 0.00 and ear/leaf error 41.24
+cut 90.00 produces tassel error 0.00 and ear/leaf error 22.24
+cut 92.00 produces tassel error 1.00 and ear/leaf error 17.11
+cut 94.00 produces tassel error 4.00 and ear/leaf error 11.97
+cut 95.00 produces tassel error 6.01 and ear/leaf error 10.10
+cut 96.00 produces tassel error 8.01 and ear/leaf error 7.62
+cut 97.00 produces tassel error 10.01 and ear/leaf error 5.87
+cut 98.00 produces tassel error 12.02 and ear/leaf error 4.81
+cut 99.00 produces tassel error 14.02 and ear/leaf error 3.74
+cut 100.00 produces tassel error 16.02 and ear/leaf error 2.68
+cut 101.00 produces tassel error 21.00 and ear/leaf error 1.61
