@@ -1,0 +1,12 @@
+payload 1 port 22 done at 5
+payload 4 port 443 done at 11
+payload 5 port 8080 done at 14
+payload 6 port 53 done at 17
+payload 7 port 53 done at 17
+payload 8 port 53 done at 17
+payload 2 port 21 done at 22
+payload 3 port 21 done at 25
+payload 11 port 8080 done at 26
+payload 9 port 21 done at 27
+payload 12 port 8080 done at 27
+payload 10 port 22 done at 36
