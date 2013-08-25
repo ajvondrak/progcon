@@ -68,11 +68,8 @@ def compare(h1, h2):
 #x = "7h 8d 9h th jc   8h 9d tc js qs"
 #x = "6d 8h 8s 2c 2d   5s 8d 8c 2h 2s"
 #All pass.
-
 while 1:
-    try:
-        hands = raw_input('-->').upper().split()
-        hand1 = hands[0:5]
-        hand2 = hands[5:]
-        print compare(hand1, hand2)
-    except: break
+    hands = raw_input('-->').upper().split()
+    hand1 = hands[0:5]
+    hand2 = hands[5:]
+    print compare(hand1, hand2)
