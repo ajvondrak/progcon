@@ -1,0 +1,13 @@
+I had a class with Dr. Rich my first quarter at Cal Poly, so I found out about
+the programming contests quickly.  However, I also had a calculus class that
+ran through the contest hours, so I didn't have time to participate properly.
+Never mind that I was rather intimidated by the whole prospect, and generally
+not confident.
+
+I wound up submitting a "solution" to the one problem I thought was easy, but I
+only managed to do so after the contest had already ended.  My submission used
+a generator expression, which failed to work because Dr. Rich was running
+Python 2.3.5.  Never mind that, looking back, I didn't seem to know how to
+program.
+
+It's funny in hindsight how awkward I was about the whole thing.
