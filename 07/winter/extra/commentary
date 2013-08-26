@@ -1,0 +1,13 @@
+I spent the whole of this contest working on the "poker" problem.  Turns out I
+was the only to have done so.
+
+At this point, I was still using Windows and didn't understand the concept of
+piping files into stdin.  My first submission broke on EOF.  My second
+submission was funny, because I had forgotten to comment out the tests I jotted
+in the file.  So, syntax error.  Woops.  The final submission still has an
+extraneous prompt, but Dr. Rich went easy on me.
+
+Years later, I would learn that these problems were very common among the
+underclassmen at Cal Poly.  I had to teach students how to work a Unix prompt
+in their Data Structures & Algorithms class when I adopted a similar system for
+their projects.
