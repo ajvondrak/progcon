@@ -1,0 +1,15 @@
+Didn't do as well at this contest.  Kind of a bummer after getting first place
+the quarter before.  I was just racking up dumb mistakes:
+
+* Didn't think to just use `map(chr, range(32, 127))` for the ASCII values in huffman_code, so missed some characters for the first submission.
+
+* Had some dumb whitespace issues with the first time_coordinator submission.
+
+* Spent an eternity and a bunch of (pointless/frustrated) submissions to ultimately fail on vote_verifier until I realized my dumb mistake shortly after the contest had closed.  I was losing leading 0s by converting incoming strings into integers.  D'oh.
+
+Oh yeah, now that I look at the rankings, Diana got her vote_verifier
+submission in right at 6 PM, thus thoroughly putting me to shame, haha.  That's
+the only time I recall someone being right on the deadline's dot.
+
+Spent some time after the contest tidying up the code to make it shorter.  Not
+really "golfing" in the extremest sense, but whatever.
