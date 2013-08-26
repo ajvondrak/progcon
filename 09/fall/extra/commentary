@@ -1,0 +1,23 @@
+This was a brutal contest for me.  I would've had three problems solved, but I
+couldn't fix string_picker.  My head formulated the solution recursively, and I
+was afraid I'd blow the stack on the acid input.  It didn't do that, but it did
+take more than 2 CPU minutes on Dr. Rich's machine.  I think that's the only
+programming contest solution I've ever had that timed out, so that's
+interesting; not a very common failure mode.
+
+Instead of moving on, I guess I spent a long time trying to convert it into a
+dynamic programming version.  To this day, I still have problems thinking in
+terms of DP, so that didn't go so well.  My second failed submission was
+actually me just submitting the same solution as before "for fun", with my odd
+experiments commented out.
+
+It wasn't until some time after the contest that I saw the acid input that was
+taking a long time was just a string of about a billion "a"s.  I memoized my
+recursive function, and it completed in about a second and a half.  Fuck!
+Lesson learned: if your recursive solution to a programming contest problem is
+taking too long, it doesn't hurt to try memoizing it.
+
+Aside from that, this contest was the first time I won the "lightning round" of
+being the first to submit a correct solution to a problem.  This would later
+become a trend for me.  No prizes or recognition for it, but it was interesting
+to me.  :-)
