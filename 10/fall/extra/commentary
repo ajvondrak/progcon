@@ -1,0 +1,31 @@
+This was a really fun contest because there were a lot of opportunities for
+really small answers.
+
+The most notable, of course, being xegment.  I looked at the problem
+description, thought it'd be a pain in the ass to actually simulate such an
+algorithm, and thought there must be a closed-form solution.  I tried to reason
+about it, but pretty much it amounted to guessing.  As I phrased it in one
+submission's email:
+
+> My meta-algorithm: try random things that work for the sample input, then see
+> if it works in general.
+>
+> --Alex Vondrak
+
+The cool thing: I eventually got the closed form.  Didn't understand it, but
+after reasoning it through with Dr. Rich, it seems fairly intuitive:
+
+1. The line hits at most x + y - 1 pixels: at least x to reach across, and at
+most y - 1 "staircase" pixels each time the line "hops up" a level.
+
+2. However, we don't need all (y - 1) "staircase" pixels.  If the line crosses
+at only one corner, the pixel is turned off.  The line crosses at a pixel's
+exact corner (i.e., the point has integral coordinates) a total of gcd(x, y) -
+1 times, excluding the corners (0, 0) and (x, y).
+
+3. x + (y - 1) - (gcd(x, y) - 1) = x + y - gcd(x, y)
+
+I may have racked up a bunch of penalty time, but I probably had the coolest
+xegment solution.  Also, I won the "lightning round" this quarter.  (I guess a
+better name for it would be the "quickest draw", but in my head I always called
+it the lightning round).
