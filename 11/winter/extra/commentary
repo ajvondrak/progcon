@@ -1,0 +1,7 @@
+Won the lightning round again.  Towards the end of my programming contest
+"career", I guess I got good at identifying the easiest problems to attack.  If
+only I could carry that speed through the remaining problems!
+
+Tried to be too clever with cockeyed_boxes at first, but learned my lesson from
+a few contests ago and preemptively memoized my recursive algorithm.  Turned
+out fine.
