@@ -1,0 +1,6 @@
+Third contest in, getting better.  I went from 0 problems solved, to 1 problem,
+to 1 problem with time to spare (1.5 problems?).  At this rate, I figured I
+would be solving entire problemsets within a year or two.
+
+I got some penalty time on "gear_up" because Dr. Rich was running an old Python
+version where the sort method didn't take a key parameter.
