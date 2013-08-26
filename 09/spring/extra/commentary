@@ -1,0 +1,11 @@
+An uneventful contest.  There were very few participants.  Stephen did a
+bang-up job, remotely solving all the problems while on the road.
+
+I used a class again for "diceline".  I think this was clearly one I could've
+done without, though.  Just wound up taking me too much time to write it.
+
+"amazed" was simple because I was in a graph theory course at the time and we
+were discussing breadth-first searches.  Not that BFSes were new to me, but it
+helped having the topic in my mind, back before I realized how many problems
+can be framed in terms of graph theory.  Still somehow took me the longest to
+code, though.
