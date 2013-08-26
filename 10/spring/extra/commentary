@@ -1,0 +1,30 @@
+This contest was funny.  In an effort to jazz up the prizes, it was our idea to
+award money to the shortest & the fastest solutions to each problem.  We
+thought it might distribute the rewards across more than just the usual
+finishers (at this point, Kevan, Stephen, and I were kind of locking up the top
+3 slots), and also foster more fun vectors along which to compete.
+
+What *actually* happened is that Stephen got more prize money, haha.
+(Actually, I don't remember if we had cash associated with the challenges.)
+Brian DeWolf and I also snagged a few points.
+
+Oh, and "flush" caused me some grief with programming errors.  First, because I
+had Python's list append/pop flipped around, and it wasn't actually working
+like a queue as I thought it was.  Second, during debugging, I spent way too
+long being bewildered by the output of some print statements I'd inserted.
+Turns out it was an issue with the variable names I was using in Python's list
+comprehensions, because their scope was broader than I anticipated:
+
+  >>> [n for n in range(10)]
+  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+  >>> n
+  9
+
+I really can't say anymore if that was the error solved by my final submission.
+My email at the time of my successful submission literally read
+
+> I'm so confused.  :(
+>
+> --Alex Vondrak
+
+but I got a reply that the program produced correct output.  Ha!
