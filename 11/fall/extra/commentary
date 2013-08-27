@@ -1,0 +1,43 @@
+Took me half an hour, but I *still* got the first correct answer.
+
+In general, I was on fire for this contest.  I had zero penalty time, first
+place for the first time in years, and I even beat Stephen.  :-)  In all, I was
+done by about 4:30 PM!  So, it's solidly the best I've ever done at a
+programming contest.  Teaching took too much of my time, so I only participated
+in Problem 0s for the next two contests.  Though I wish I'd had the time to
+participate in the full competitions, this still certainly wasn't a bad one to
+end my programming contest "career" on.
+
+I believe Stephen and I both spotted typoes in spares.pdf.  I can't remember
+what it was, but I was on campus and went to Dr. Rich about it.  He said he was
+composing an email to Stephen to explain that there wasn't a typo.  But since I
+was able to talk in person, we came to an understanding that there was an
+error.  Maybe that gave me an advantage over Stephen, haha.  At any rate, a
+much better resolution than last quarter's typo...for one, I noticed it.
+
+walk_the_line was another one of those interesting problems like xegment that
+actually has a closed form.  It took me awhile to figure it out, but I
+eventually did.  The logic goes like this:
+
+An n-step walk can only end at d if they have the same parity.
+
+WLOG, let d be positive.  For an n-step walk to end at point d, the number of
++1 steps in the walk have to exceed the number of -1 steps by exactly d.
+
+Let p = the number of +1 steps and m = the number of -1 steps (p for "plus", m
+for "minus").  The number of possible n-step walks ending at d is then
+
+  C(n, p)
+
+i.e., "n choose p".  But how do we determine p?  Turns out we can solve for it
+based on what we know:
+
+  p + m = n     (total number of steps = # plus steps + # minus steps)
+  p - m = d     (there are d more plus steps than there are minus steps)
+
+Adding the equations together, we get
+
+  2p = n + d
+   p = (n + d)/2
+
+Thus, if n and d have the same parity, our answer is simply C(n, (n+d)/2).
