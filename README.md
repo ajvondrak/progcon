@@ -45,6 +45,8 @@ To summarize my performance,
 
   * `problem_name.tst_out` - The acid output file for the particular problem.  Hidden from the contestants until after the competition.  Used to judge whether a submission was ultimately correct..
 
+  * `solutions/` - Dr. Rich's solutions to the problems, released after the contest and written in Java.
+
   * `extra/` - Whatever miscellaneous extra material I might have for that contest.
 
   * `failed/problem_name/n.*` - The _n_<sup>th</sup> incorrect version of the indicated problem that I submitted to Dr. Rich.
@@ -74,5 +76,5 @@ However, I do have some notes that indicate my personal rank at each of those co
 * I didn't place in Fall 2006, to the surprise of no one.
 * I placed 7th in Winter 2007.  I did get a shout-out in Dr. Rich's email for solving the `poker` problem, though.
 * I placed 8th in Fall 2007.
-* I placed 1st in Spring 2008.  I remember being excited that I managed to beat the previous champ, Jonathan Dautrich.  Little did I know, I'd be trounced by Stephen Crane for years to come.  :-)
+* I placed 1st in Spring 2008.
 * I placed 2nd in Winter 2009.
