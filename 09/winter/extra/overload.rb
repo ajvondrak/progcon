@@ -13,6 +13,8 @@ def extends(db, sub, sup)
   db.execute(expand, sub, sup) do |row|
     extends(db, *row)
   end
+  extends(db, sub, sub)
+  extends(db, sup, sup)
 end
 
 def declare(db, return_type, method_name, formals)
@@ -25,13 +27,35 @@ def declare(db, return_type, method_name, formals)
   }
 end
 
+def declaration(db, method_id)
+  method = 'SELECT return, name FROM method WHERE id = ?'
+  decl = db.execute(method, method_id).join(' ')
+  formals = 'SELECT type FROM formal WHERE method_id = ? ORDER BY offset'
+  decl + "(#{db.execute(formals, method_id).join(', ')})"
+end
+
 def matching(db, context_type, method_name, actuals)
-  sql = <<SQL
+  matches_method = <<SQL
 SELECT method.id
-FROM method
-WHERE method.name = ?1 AND
-      TODO;
+FROM method, hierarchy
+WHERE method.name = ?2 AND
+      method.return = hierarchy.subclass AND
+      ?1 = hierarchy.superclass;
 SQL
+  matches_formal = <<SQL
+SELECT 1
+FROM formal, hierarchy
+WHERE formal.method_id = ?1 AND
+      formal.offset = ?3 AND
+      formal.type = hierarchy.superclass AND
+      ?2 = hierarchy.subclass;
+SQL
+  count_formals = 'SELECT COUNT(offset) FROM formal WHERE method_id = ?'
+  db.execute(matches_method, context_type, method_name).flatten.reject {|id|
+    actuals.to_enum.with_index.any? {|actual, offset|
+      db.execute(matches_formal, id, actual, offset).empty?
+    } || db.get_first_value(count_formals, id) != actuals.length
+  }
 end
 
 SQLite3::Database.new(':memory:') do |db|
@@ -81,6 +105,11 @@ SQL
       p row
     end
   end
+
+  puts '=== XXX'
+  matching(db, 'Number', 'area', ['Rectangle']).each {|id|
+    puts declaration(db, id)
+  }
 
   # hierarchy, declarations, invocations = $stdin.read.split(/\n\n/)
 end
