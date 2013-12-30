@@ -27,6 +27,11 @@ def declare(db, return_type, method_name, formals)
   }
 end
 
+def declaration_parts(line)
+  parts = line.chomp.split(/[ ,()]+/)
+  [parts[0], parts[1], parts[2..-1]]
+end
+
 def declaration(db, method_id)
   method = 'SELECT return, name FROM method WHERE id = ?'
   decl = db.execute(method, method_id).join(' ')
@@ -34,7 +39,7 @@ def declaration(db, method_id)
   decl + "(#{db.execute(formals, method_id).join(', ')})"
 end
 
-def matching(db, context_type, method_name, actuals)
+def matches(db, context_type, method_name, actuals)
   matches_method = <<SQL
 SELECT method.id
 FROM method, hierarchy
@@ -66,6 +71,9 @@ CREATE TABLE hierarchy (
   superclass TEXT
 );
 
+INSERT INTO hierarchy VALUES ('Object', 'Object');
+INSERT INTO hierarchy VALUES ('void', 'void'); /* ? */
+
 CREATE TABLE method (
   id INTEGER PRIMARY KEY,
   return TEXT,
@@ -80,36 +88,14 @@ CREATE TABLE formal (
 );
 SQL
 
-  extends(db, 'Object', 'Object')
-  extends(db, 'void', 'void') # XXX
-
-  extends(db, 'Number', 'Object')
-  extends(db, 'Byte', 'Number')
-  extends(db, 'Integer', 'Byte')
-  extends(db, 'Widget', 'Object')
-  extends(db, 'Shape', 'Object')
-  extends(db, 'Rectangle', 'Shape')
-  extends(db, 'Square', 'Rectangle')
-
-  declare(db, 'void', 'mash', ['Number', 'Shape'])
-  declare(db, 'Number', 'area', ['Shape'])
-  declare(db, 'Integer', 'area', ['Shape'])
-  declare(db, 'void', 'area', ['Square'])
-  declare(db, 'Byte', 'area', ['Rectangle'])
-  declare(db, 'Number', 'side', ['Square'])
-  declare(db, 'void', 'doIt', [])
-
-  ['hierarchy', 'method', 'formal'].each do |table|
-    puts "=== #{table}"
-    db.execute("SELECT * FROM #{table}") do |row|
-      p row
-    end
-  end
-
-  puts '=== XXX'
-  matching(db, 'Number', 'area', ['Rectangle']).each {|id|
-    puts declaration(db, id)
+  hierarchy, declarations, invocations = $stdin.read.split(/\n\n/)
+  hierarchy.each_line {|line| extends(db, *line.chomp.split(/ extends /)) }
+  declarations.each_line {|line| declare(db, *declaration_parts(line)) }
+  invocations.each_line {|line|
+    puts "actual: #{line}"
+    matches(db, *declaration_parts(line)).each {|id|
+      puts "formal: #{declaration(db, id)}"
+    }
+    puts
   }
-
-  # hierarchy, declarations, invocations = $stdin.read.split(/\n\n/)
 end
