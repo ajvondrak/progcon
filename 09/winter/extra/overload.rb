@@ -8,22 +8,22 @@ require 'sqlite3'
 
 def extends(db, sub, sup)
   exists = 'SELECT 1 FROM hierarchy WHERE subclass = ?1 AND superclass = ?2'
-  return unless db.execute(exists, sub, sup).empty?
+  return unless db.execute(exists, [sub, sup]).empty?
   insert = 'INSERT INTO hierarchy(subclass, superclass) VALUES (?1, ?2);'
-  db.execute(insert, sub, sup)
+  db.execute(insert, [sub, sup])
   expand = 'SELECT DISTINCT ?1, superclass FROM hierarchy WHERE subclass = ?2;'
-  db.execute(expand, sub, sup) { |row| extends(db, *row) }
+  db.execute(expand, [sub, sup]) { |row| extends(db, *row) }
   extends(db, sub, sub)
   extends(db, sup, sup)
 end
 
 def declare(db, return_type, method_name, formals)
   insert = 'INSERT INTO method(return, name) VALUES (?1, ?2);'
-  db.execute(insert, return_type, method_name)
+  db.execute(insert, [return_type, method_name])
   method_id = db.last_insert_row_id
   insert = 'INSERT INTO formal(method_id, type, offset) VALUES (?1, ?2, ?3);'
   formals.each.with_index do |formal, offset|
-    db.execute(insert, method_id, formal, offset)
+    db.execute(insert, [method_id, formal, offset])
   end
 end
 
@@ -34,9 +34,9 @@ end
 
 def declaration(db, method_id)
   method = 'SELECT return, name FROM method WHERE id = ?'
-  decl = db.execute(method, method_id).join(' ')
+  decl = db.execute(method, [method_id]).join(' ')
   formals = 'SELECT type FROM formal WHERE method_id = ? ORDER BY offset'
-  decl + "(#{db.execute(formals, method_id).join(', ')})"
+  decl + "(#{db.execute(formals, [method_id]).join(', ')})"
 end
 
 def matching_methods(db, context_type, method_name)
@@ -47,7 +47,7 @@ WHERE method.name = ?2 AND
       method.return = hierarchy.subclass AND
       ?1 = hierarchy.superclass;
 SQL
-  db.execute(method_ids, context_type, method_name).flatten
+  db.execute(method_ids, [context_type, method_name]).flatten
 end
 
 def matches_formals(db, method_id, actuals)
@@ -59,7 +59,7 @@ WHERE formal.method_id = ?1 AND
       ?2 = hierarchy.subclass;
 SQL
   actuals.to_enum.with_index.all? do |actual, offset|
-    !db.execute(matches_formal, method_id, actual, offset).empty?
+    !db.execute(matches_formal, [method_id, actual, offset]).empty?
   end
 end
 
